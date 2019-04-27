@@ -136,7 +136,7 @@
     </style>
 </head>
 
-<body>
+<body onLoad="pageScroll()">
     <div class="jumbotron top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-#015871 static-top" href="javascript:void(0)"
             style="background:  #015871; text-decoration: none; display: block;" id="navbar">
@@ -329,6 +329,11 @@
         more.style.display = "none";
         info.style.display = "none";
         rules.style.display = "none";
+
+        function pageScroll() {
+            window.scrollBy(0, 50);
+            scrolldelay = setTimeout('pageScroll()', 100);
+        }
     </script>
 </body>
 
