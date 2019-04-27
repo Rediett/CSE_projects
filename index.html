@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>
         DCPS_Wifi_policies
@@ -29,6 +30,7 @@
             background: #015871;
             overflow-x: hidden;
         }
+
         .top {
             height: 105vh;
             text-align: center;
@@ -38,6 +40,7 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
         .top h1 {
             margin-top: 20vh;
             color: white;
@@ -45,6 +48,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: 10ex;
         }
+
         .home {
             height: auto;
             margin-top: 0px;
@@ -52,6 +56,7 @@
             border-radius: 9px;
             margin-bottom: 50px;
         }
+
         .ocean {
             display: block;
             /* z-index: 3; */
@@ -63,6 +68,7 @@
             background: #015871;
             opacity: 0.8;
         }
+
         .wave {
             background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
             position: absolute;
@@ -72,34 +78,42 @@
             animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
             transform: translate3d(0, 0, 0);
         }
+
         .wave:nth-of-type(2) {
             top: -175px;
             animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
             opacity: 1;
         }
+
         @keyframes wave {
             0% {
                 margin-left: 0;
             }
+
             100% {
                 margin-left: -1600px;
             }
         }
+
         @keyframes swell {
+
             0%,
             100% {
                 transform: translate3d(0, -25px, 0);
             }
+
             50% {
                 transform: translate3d(0, 5px, 0);
             }
         }
+
         #navbar a {
             float: left;
             display: block;
             text-align: center;
             text-decoration: none;
         }
+
         .sticky {
             position: fixed;
             top: 0;
@@ -108,17 +122,20 @@
             margin-left: 0;
             margin-right: 0;
         }
+
         .p {
             font-size: auto;
             font-size-adjust: initial;
             /* width: 80%; */
             margin-top: 25px;
         }
+
         .t {
             font: 25px;
         }
     </style>
 </head>
+
 <body>
     <div class="jumbotron top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-#015871 static-top" href="javascript:void(0)"
@@ -207,9 +224,9 @@
     <div class="card text-center container home shadow-none p-9 mb-10 bg-light rounded" id="rules">
         <div class="card-body">
             <p class="card-text p">
-                    <div class="card-header" style="font-size: 30pc">
-                            Rules
-                        </div>
+                <div class="card-header" style="font-size: 30px">
+                    Rules
+                </div>
                 <table class="table">
                     <tbody>
                         <tr>
@@ -286,27 +303,27 @@
         </div>
     </div>
     <div class="card text-center container home shadow-sm p-9 mb-10 bg-black rounded" id="more">
-            <div class="card-header" style="font-size: auto">
-                More
-            </div>
-            <div class="card-body">
-                <p class="card-text p">There are many rules and regulations on the DCPS internet and technology policy. The
-                    DCPS internet and technology policy serves many purposes in order to protect and maintain a professional
-                    environment for both the staff and the students for DCPS. The purpose of the policy is to set a set of
-                    guidelines purpose is to establish a safe set of guidelines for the staff and students of DCPS. The
-                    policy is designed to establish standards for the proper ways that the internet is to be used and proper
-                    ways for maintenance for internet and equipment. It is also set to prevent unlawful use of the internet
-                    and email within the DCPS network. Also, the purpose of the policy is to comply with the Children’s
-                    Internet Protection Act of 2000 (CIPA). </p>
-                <p class="card-text p">In order for students to be kept on track while on a computer or technological device
-                    rules have been set to help. Things such as pornography and inappropriate use of the computer are
-                    penalized and not what the computer, internet, and technology DCPS provide. A learning environment
-                    should be maintained at all time and with this, the policy is set up to help prevent many legal
-                    liabilities and prevent off-task behavior. The policy is also set up to penalize and punish those who
-                    don’t abide by the rules depending on the situation.
-                </p><br>
-            </div>
+        <div class="card-header" style="font-size: 30px">
+            More
         </div>
+        <div class="card-body">
+            <p class="card-text p">There are many rules and regulations on the DCPS internet and technology policy. The
+                DCPS internet and technology policy serves many purposes in order to protect and maintain a professional
+                environment for both the staff and the students for DCPS. The purpose of the policy is to set a set of
+                guidelines purpose is to establish a safe set of guidelines for the staff and students of DCPS. The
+                policy is designed to establish standards for the proper ways that the internet is to be used and proper
+                ways for maintenance for internet and equipment. It is also set to prevent unlawful use of the internet
+                and email within the DCPS network. Also, the purpose of the policy is to comply with the Children’s
+                Internet Protection Act of 2000 (CIPA). </p>
+            <p class="card-text p">In order for students to be kept on track while on a computer or technological device
+                rules have been set to help. Things such as pornography and inappropriate use of the computer are
+                penalized and not what the computer, internet, and technology DCPS provide. A learning environment
+                should be maintained at all time and with this, the policy is set up to help prevent many legal
+                liabilities and prevent off-task behavior. The policy is also set up to penalize and punish those who
+                don’t abide by the rules depending on the situation.
+            </p><br>
+        </div>
+    </div>
     <script>
         var home = document.getElementById('home');
         var info = document.getElementById('info');
@@ -315,7 +332,7 @@
         more.style.display = "none";
         info.style.display = "none";
         rules.style.display = "none";
-        
     </script>
 </body>
+
 </html>
