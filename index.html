@@ -243,7 +243,7 @@
         </script>
         <h1 class="content">DCPS Wifi<br>Policies</h1>
         <svg width="60" height="47" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
-            class="svg_down">
+            class="svg_down" id="svg-down">
             <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
             <g class="layer">
                 <title>Layer 1</title>
@@ -415,7 +415,8 @@
             scrolldelay = setTimeout('pageScroll()', 100);
         }
         if (window.innerWidth < 768) {
-            alert("Open page on a computer for more UI speed")
+            document.getElementById("svg-down").style.display = 'none';
+            alert("Open page on a computer for more UI speed");
         }
     </script>
 </body>
