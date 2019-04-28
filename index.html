@@ -146,9 +146,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-#015871 static-top" href="javascript:void(0)"
             style="background:  #015871; text-decoration: none; display: block;" id="navbar">
             <div class="container">
-                <a class="navbar-brand" id="home-bt" onclick="home.style.display = 'block';
-                rules.style.display = 'none';
-                info.style.display = 'none';  more.style.display = 'none'; homebt.href = '#home';">
+                <a class="navbar-brand">
                     <img src="https://firebasestorage.googleapis.com/v0/b/runn-cd19f.appspot.com/o/web_test.002.png?alt=media&token=002652cf-6f18-40c5-8ecf-32c195159ab2"
                         alt="" style="height: 43px;">
                     DCFI
@@ -358,6 +356,9 @@
         function pageScroll() {
             window.scrollBy(0, 50);
             scrolldelay = setTimeout('pageScroll()', 100);
+        }
+        if(window.innerWidth < 768){
+            alert("Open page on a computer for more UI speed")
         }
     </script>
 </body>
