@@ -27,8 +27,9 @@
             padding: 0;
             width: 100%;
             height: 100%;
-/*             background: #015871; */
+            /* background: #015871; */
             overflow-x: hidden;
+            padding-bottom: 25px;
         }
 
         .top {
@@ -51,10 +52,9 @@
 
         .home {
             height: auto;
-            margin-top: 0px;
             display: block;
+
             border-radius: 9px;
-            margin-bottom: 50px;
         }
 
         .ocean {
@@ -153,24 +153,28 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" onclick="home.style.display = 'block';
+                            <a class="nav-link" id="home-bt" onclick="home.style.display = 'block';
                             rules.style.display = 'none';
-                            info.style.display = 'none';">Home
+                            info.style.display = 'none';  more.style.display = 'none'; homebt.href = '#home';">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="home.style.display = 'none';
+                            <a class="nav-link" id="rules-bt"
+                                onclick="home.style.display = 'none';
                             rules.style.display = 'block';
-                            info.style.display = 'none';" id="rules_bt">Rules</a>
+                            info.style.display = 'none'; more.style.display = 'none'; rulesbt.href = '#rules';">Rules</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="home.style.display = 'none';
+                            <a class="nav-link" id="info-bt"
+                                onclick="home.style.display = 'none';
                             rules.style.display = 'none';
-                            info.style.display = 'block';">Information</a>
+                            info.style.display = 'block'; more.style.display = 'none'; infobt.href ='#info';">Information</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">More</a>
+                            <a class="nav-link" id="more-bt" onclick="home.style.display = 'none';
+                            rules.style.display = 'none';
+                            info.style.display = 'none'; more.style.display = 'block'; morebt.href ='#more';">More</a>
                         </li>
                     </ul>
                 </div>
@@ -194,7 +198,8 @@
         <div class="wave"></div>
         <div class="wave"></div>
     </div>
-    <div class="card text-center container home shadow-sm p-9 mb-10 bg-black rounded" class="home" id="home">
+    <br>
+    <div class="card text-center container shadow-sm p-9 mb-10 bg-black rounded" id="home">
         <div class="card-header" style="font-size: 30px">
             DCPS Wifi Policies
         </div>
@@ -207,74 +212,78 @@
                 ways for maintenance for internet and equipment. It is also set to prevent unlawful use of the internet
                 and email within the DCPS network. Also, the purpose of the policy is to comply with the Children’s
                 Internet Protection Act of 2000 (CIPA). </p>
+            <p class="card-text p">On DCPS school wifi students are prohibited from using the DCPS computer network to
+                transmit fraudulently, harassing or obscene, or otherwise inappropriate email messages. Examples of such
+                messages include but are not limited to. First Messages sent under an assumed name, modified email
+                address, or with the intent to obscure the origin of the message. Second Messages that harass an
+                individual or group because of race, color, religion, national and Messages that are obscene, contain
+                pornography or are harmful to minors.
+            </p>
             <p class="card-text p">In order for students to be kept on track while on a computer or technological device
                 rules have been set to help. Things such as pornography and inappropriate use of the computer are
                 penalized and not what the computer, internet, and technology DCPS provide. A learning environment
                 should be maintained at all time and with this, the policy is set up to help prevent many legal
                 liabilities and prevent off-task behavior. The policy is also set up to penalize and punish those who
                 don’t abide by the rules depending on the situation.
-            </p><br>
-
+            </p>
+            <br>
         </div>
     </div>
-    <br>
     <div class="card text-center container home shadow-none p-9 mb-10 bg-light rounded" id="rules">
+        <div class="card-header" style="font-size: 30px">
+            Rules
+        </div>
         <div class="card-body">
-            <p class="card-text p">
-                <div class="card-header" style="font-size: 30px">
-                    Rules
-                </div>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <td>When using public workstations, students shall log off of the network before leaving the
-                                work station. Students shall further ensure that the workstation is in suitable
-                                condition for the next student</td>
-                        </tr>
-                        <tr>
-                            <td>When using private or individual workstations, students shall lock their computer or log
-                                off of the network if they will be away from the workstation for an extended period of
-                                time.</td>
-                        </tr>
-                        <tr>
-                            <td>Students are prohibited from modifying or rearranging technology equipment belonging to
-                                DCPS, including keyboards, monitor, printers, and computers.</td>
-                        </tr>
-                        <tr>
-                            <td>Students may not use network computers for personal financial gain by posting messages
-                                that advertise the student’s own personal business or any business or venture in which
-                                the student has a financial interest.</td>
-                        </tr>
-                        <tr>
-                            <td>Students shall not install or run any type of software on a DCPS network computer
-                                without the consent of the Office of the Chief Technology Officer.</td>
-                        </tr>
-                        <tr>
-                            <td>Students shall not use the DCPS computer network to engage in any illegal or criminal
-                                acts, including, but not limited to, criminal gang activity, threatening the physical
-                                safety of another person, or computer hacking.</td>
-                        </tr>
-                        <tr>
-                            <td>Students shall not download or spread computer viruses on DCPS network computers or
-                                engage in any other deliberate conduct that disrupts, obstructs, or burdens the
-                                resources of the DCPS computer network. </td>
-                        </tr>
-                        <tr>
-                            <td>Students are prohibited from accessing social networking sites, including, but not
-                                limited to, My Space, Facebook, and Twitter.</td>
-                        </tr>
-                        <tr>
-                            <td>Students shall not display or transmit any images, sounds, or messages, or other
-                                material that could create an atmosphere of harassment or hate.</td>
-                        </tr>
-                        <tr>
-                            <td>All DCPS students are prohibited from accessing DCPS network and email accounts outside
-                                of school without a parent or guardian supervising the usage, unless the student is 18
-                                or older.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </p>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>When using public workstations, students shall log off of the network before leaving the
+                            work station. Students shall further ensure that the workstation is in suitable
+                            condition for the next student</td>
+                    </tr>
+                    <tr>
+                        <td>When using private or individual workstations, students shall lock their computer or log
+                            off of the network if they will be away from the workstation for an extended period of
+                            time.</td>
+                    </tr>
+                    <tr>
+                        <td>Students are prohibited from modifying or rearranging technology equipment belonging to
+                            DCPS, including keyboards, monitor, printers, and computers.</td>
+                    </tr>
+                    <tr>
+                        <td>Students may not use network computers for personal financial gain by posting messages
+                            that advertise the student’s own personal business or any business or venture in which
+                            the student has a financial interest.</td>
+                    </tr>
+                    <tr>
+                        <td>Students shall not install or run any type of software on a DCPS network computer
+                            without the consent of the Office of the Chief Technology Officer.</td>
+                    </tr>
+                    <tr>
+                        <td>Students shall not use the DCPS computer network to engage in any illegal or criminal
+                            acts, including, but not limited to, criminal gang activity, threatening the physical
+                            safety of another person, or computer hacking.</td>
+                    </tr>
+                    <tr>
+                        <td>Students shall not download or spread computer viruses on DCPS network computers or
+                            engage in any other deliberate conduct that disrupts, obstructs, or burdens the
+                            resources of the DCPS computer network. </td>
+                    </tr>
+                    <tr>
+                        <td>Students are prohibited from accessing social networking sites, including, but not
+                            limited to, My Space, Facebook, and Twitter.</td>
+                    </tr>
+                    <tr>
+                        <td>Students shall not display or transmit any images, sounds, or messages, or other
+                            material that could create an atmosphere of harassment or hate.</td>
+                    </tr>
+                    <tr>
+                        <td>All DCPS students are prohibited from accessing DCPS network and email accounts outside
+                            of school without a parent or guardian supervising the usage, unless the student is 18
+                            or older.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="card text-center container home shadow-sm p-9 mb-10 bg-black rounded" id="info">
@@ -282,20 +291,29 @@
             Information
         </div>
         <div class="card-body">
-            <p class="card-text p">There are many rules and regulations on the DCPS internet and technology policy. The
-                DCPS internet and technology policy serves many purposes in order to protect and maintain a professional
-                environment for both the staff and the students for DCPS. The purpose of the policy is to set a set of
-                guidelines purpose is to establish a safe set of guidelines for the staff and students of DCPS. The
-                policy is designed to establish standards for the proper ways that the internet is to be used and proper
-                ways for maintenance for internet and equipment. It is also set to prevent unlawful use of the internet
-                and email within the DCPS network. Also, the purpose of the policy is to comply with the Children’s
-                Internet Protection Act of 2000 (CIPA). </p>
-            <p class="card-text p">In order for students to be kept on track while on a computer or technological device
-                rules have been set to help. Things such as pornography and inappropriate use of the computer are
-                penalized and not what the computer, internet, and technology DCPS provide. A learning environment
-                should be maintained at all time and with this, the policy is set up to help prevent many legal
-                liabilities and prevent off-task behavior. The policy is also set up to penalize and punish those who
-                don’t abide by the rules depending on the situation.
+            <p class="card-text p">The DCPS STUDENT SAFETY AND USE POLICY FOR INTERNET AND TECHNOLOGY purpose are to
+                establish a safe set of guidelines for the staff and students of DCPS. The policy is designed to
+                establish standards for the proper ways that the internet is to be used and proper ways for maintenance
+                for internet and equipment. It is also set to prevent unlawful use of the internet and email within the
+                DCPS network. Also, the purpose of the policy is to comply with the Children’s Internet Protection Act
+                of 2000 (CIPA).
+                The introduction to the policy states, “ DCPS will use technology protection to block or filter internet
+                access to visual depictions that are obscene, pornographic, or harmful to minors. DCPS reserves the
+                right to supervise and monitor students’ online activities and to access, review, copy and store or
+                delete any electronic information or files and disclose them to others as it deems necessary. Students
+                should have no expectation of privacy regarding the use of DCPS property, the DCPS computer network or
+                the use of the Internet, files, or email while within the network. Penalties for prohibited use may
+                result in restrictions to network access or cancellation of accounts. Additionally, violations may
+                result in disciplinary and/or legal action for students including suspension, expulsion, and criminal
+                prosecution. DCPS makes no guarantee that the functions or quality of the network services it provides
+                will be free of errors or defects. DCPS is not responsible for any claims, loss, damages, costs, or
+                other obligations arising from the use of the network or accounts. Any charges a student incurs due to
+                network use will be borne solely by the student. DCPS is not responsible for the accuracy or quality of
+                the information obtained by the student through the use of the system unless the information is obtained
+                from the DCPS website or the District of Columbia Government website. Any statement accessible on the
+                network or the Internet is understood to be the author’s 2 – April 8, 2009, individual point of view and
+                not that of DCPS, the District of Columbia Government, their affiliates, or employees.” As you can see
+                many legal actions are taken if any violations were to be made.
             </p><br>
         </div>
     </div>
@@ -326,6 +344,10 @@
         var info = document.getElementById('info');
         var rules = document.getElementById('rules');
         var more = document.getElementById('more');
+        var homebt = document.getElementById('home-bt');
+        var morebt = document.getElementById('more-bt')
+        var infobt = document.getElementById('info-bt');
+        var rulesbt = document.getElementById('rules-bt');
         more.style.display = "none";
         info.style.display = "none";
         rules.style.display = "none";
