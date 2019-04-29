@@ -126,7 +126,7 @@
             font-size: auto;
             font-size-adjust: initial;
             /* width: 80%; */
-            margin-top: 25px;
+            margin-top: 2vh;
         }
 
         .t {
@@ -146,21 +146,21 @@
         }
 
         .svg_down {
-            margin-top: 80px;
+            margin-top: 10px;
             animation: down 2s infinite;
         }
 
         @keyframes down {
             0% {
-                margin-top: 80px;
+                margin-top: 10px;
             }
 
             50% {
-                margin-top: 95px;
+                margin-top: 20px;
             }
 
             100% {
-                margin-top: 80px;
+                margin-top: 10px;
             }
         }
         @keyframes color {
@@ -201,10 +201,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" id="home-bt" onclick="home.style.display = 'block';
                             rules.style.display = 'none';
-                            info.style.display = 'none';  more.style.display = 'none'; homebt.href = '#home';">Home
+                            info.style.display = 'none';  more.style.display = 'none'; homebt.href = '#home'; morebt.style.color = '#8bacb9';homebt.style.color = 'white';rulesbt.style.color = '#8bacb9';infobt.style.color = '#8bacb9';">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -212,18 +212,18 @@
                             <a class="nav-link" id="rules-bt"
                                 onclick="home.style.display = 'none';
                             rules.style.display = 'block';
-                            info.style.display = 'none'; more.style.display = 'none'; rulesbt.href = '#rules';">Rules</a>
+                            info.style.display = 'none'; more.style.display = 'none'; rulesbt.href = '#rules'; morebt.style.color = '#8bacb9';homebt.style.color = '#8bacb9';rulesbt.style.color = 'white';infobt.style.color = '#8bacb9';">Rules</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="info-bt"
                                 onclick="home.style.display = 'none';
                             rules.style.display = 'none';
-                            info.style.display = 'block'; more.style.display = 'none'; infobt.href ='#info';">Information</a>
+                            info.style.display = 'block'; more.style.display = 'none'; infobt.href ='#info';morebt.style.color = '#8bacb9';homebt.style.color = '#8bacb9';rulesbt.style.color = '#8bacb9';infobt.style.color = 'white';">Information</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="more-bt" onclick="home.style.display = 'none';
                             rules.style.display = 'none';
-                            info.style.display = 'none'; more.style.display = 'block'; morebt.href ='#more';">More</a>
+                            info.style.display = 'none'; more.style.display = 'block'; morebt.href ='#more'; morebt.style.color = 'white';homebt.style.color = '#8bacb9';rulesbt.style.color = '#8bacb9';infobt.style.color = '#8bacb9';">More</a>
                         </li>
                     </ul>
                 </div>
@@ -409,6 +409,8 @@
         more.style.display = "none";
         info.style.display = "none";
         rules.style.display = "none";
+
+        homebt.style.color = "white"
 
         function pageScroll() {
             window.scrollBy(0, 50);
